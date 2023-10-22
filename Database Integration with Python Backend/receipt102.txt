@@ -1,0 +1,20 @@
+	Organization Name, UoBs
+	Address: Skardu,Baltistan
+.......................................................................
+Employee ID		:  102
+Salary of		:  March-2023
+Generated On		: 20-10-2023
+.......................................................................
+Total Days		:  1000
+Total Present		:  998
+Total Absent		:  2
+Conveyance		:  Rs.60
+Medical		:  Rs.10000
+PF		:  Rs.9000
+Gross Payment		:  Rs.1000000000
+Net Salary		:  Rs998019060.0
+......................................................................
+This is computer generated slip, not required    
+any signature
+
+

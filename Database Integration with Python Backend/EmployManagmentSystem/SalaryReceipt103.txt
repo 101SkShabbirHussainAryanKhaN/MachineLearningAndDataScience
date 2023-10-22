@@ -1,0 +1,20 @@
+ 	 Company Name : XYZ
+	 Address : XYZ, Shabbir house
+--------------------------------------------------------
+    Employee ID		 :  ****
+    Salary of		 :  MM-YYYY
+    Generated on		 :  DD-MM-YYYY
+--------------------------------------------------------
+    Total Days 		 :  DD
+    Total Present		 :  DD
+    Total Absent		 :  DD
+    Convince  		 :  Rs.----
+    Medical 		 :  Rs.----
+    PF 		 :  Rs.----
+    Gross Payment		 :  Rs.----
+    Net Salary 		 :  Rs.----
+---------------------------------------------------------
+This is Computer generated slip , not required any
+signature
+
+

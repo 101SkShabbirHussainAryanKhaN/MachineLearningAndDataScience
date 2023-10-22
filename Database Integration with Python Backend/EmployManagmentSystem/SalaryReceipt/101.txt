@@ -1,0 +1,19 @@
+ 	 Company Name : XYZ
+	 Address : XYZ, Shabbir house
+--------------------------------------------------------
+    Employee ID		 :  101
+    Salary of		 :  Oct-2023
+    Generated on		 :  15 10 23
+--------------------------------------------------------
+    Total Days 		 :  30
+    Total Present		 :  27
+    Total Absent		 :  3
+    Convince  		 :  Rs.20000
+    Medical 		 :  Rs.5000
+    PF 		 :  Rs.10000
+    Gross Payment		 :  Rs.500000
+    Net Salary 		 :  Rs.415000
+---------------------------------------------------------
+This is Computer generated slip , not required any
+signature
+
