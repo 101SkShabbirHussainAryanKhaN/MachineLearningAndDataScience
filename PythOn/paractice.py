@@ -1,0 +1,5 @@
+# print("Hello", len(input("Enter your name? ")), "")
+# print("Hello", input("Enter your name? "), " ")
+name = input("Enter your Name?\n")
+lenght = len(name)
+print("Hello Sir/Ma'am ",name ,"The lenght of name is :", lenght)

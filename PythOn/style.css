@@ -1,0 +1,47 @@
+section{
+    display: flex;
+    width: 0%;
+}
+
+.navbar{
+    display: flex;
+    width: 0%;
+}
+
+.navbar ul{
+    display: flex;
+    width: 0%;
+    list-style: none;
+    
+}
+
+.navbar li a{
+    display: flex;
+    width: 0%;
+    list-style: none;
+    text-decoration: none;
+    margin: 12px;
+    color: black;
+font-family:Arial, Helvetica, sans-serif;
+font-weight: bold;
+font-size: 1.1rem;
+
+    
+}
+
+.navbar li a:hover{
+color: #ff4500;
+background-color: black;
+border-radius: 50%;
+transition: all 2s ease-in-out;
+
+    
+}
+
+.logo{
+    color: #ff4500;
+}
+.btn{
+    display: flex;
+    width: 0%;
+}
