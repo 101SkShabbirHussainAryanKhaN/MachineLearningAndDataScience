@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>simple Web design</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: rgb(20, 23, 24);
+            text-align: center;
+            padding: 2px;
+            font-size: 21px;
+            font-weight: 500;
+            color: white;
+        }
+
+        nav {
+            float: left;
+            width: 20%;
+            height: 500px;
+            background: #fff;
+            padding: 20px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        article {
+            float: left;
+            padding: 20px;
+            width: 80%;
+            background-color: #f1f1f1;
+            height: 500px;
+
+        }
+
+        footer {
+            background-color: rgb(40, 44, 44);
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h2>Welcome to My Website</h2>
+    </header>
+    <section>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Goto Python doc</a></li>
+            </ul>
+        </nav>
+        <article>
+            <h2>Welcome to Our Site</h2>
+            <p>Here you will learn how to create Responsive website</p>
+        </article>
+    </section>
+    <footer>
+
+        <h2>Shabbir Hussain</h2>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,20 @@
+div{
+    padding: 50px;
+    margin: 1px;
+    white-space: 10px;
+    background-color: rgb(202, 200, 200);
+    text-align: center;
+    color: brown;
+    /* line-break: auto; */
+    white-space: pre;
+    display: block;
+}
+legend {
+    text-align: center;
+    background-color: grey;
+}
+button{
+    padding: 10px ;
+    color: brown;
+    background-color: chartreuse;
+}

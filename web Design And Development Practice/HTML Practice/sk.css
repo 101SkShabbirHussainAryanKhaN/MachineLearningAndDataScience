@@ -1,0 +1,23 @@
+
+section{
+    display: flex;
+    width: 0%;
+}
+
+.navbar{
+
+    display: flex;
+    width: 0%;
+    
+}
+.navbar ul{
+    display: flex;
+    width: 0%;
+    text-decoration: none;
+}
+.navbar li a{
+    display: flex;
+    width: 0%;
+    color: white;
+    
+}

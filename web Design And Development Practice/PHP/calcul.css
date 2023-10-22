@@ -1,0 +1,10 @@
+.calculator {
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+input, select, button {
+    margin: 5px;
+    padding: 10px;
+}
