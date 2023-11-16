@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gilgit-Baltistan Tourism</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+</head>
+<body onload='if (window.location.href.substr(window.location.href.length - 6) == "#about") { introAboutLogoTransition(); }'>
+    <!--navbar-->
+    <nav class="navbar glass" style="height: 70px;">
+        <span><a href="#home" style="display:flex; align-items: center;"><img class="img2" src="./sklogo.png" width="40"
+            style="margin: -25px -10px -25px -20px"><h1 class="logo">&nbsp;GB Tourism</h1></a></span>
+        <ul class="nav-links">
+            <li><a href="./index.html" id="pri" class="active cir_border" target="_blank">Home</a></li>
+            <li><a href="./events.html"  id="sec" class="active cir_border" target="_blank">Tours</a></li>
+            <li><a href="./explore.html" id="tri" class="active cir_border" target="_blank">Explore</a></li>
+            <li><a href="./aboutUs.html" id="quad" class="active cir_border" target="_blank">About</a></li>
+            <li><a href="./partners.html" id="quint" class="active cir_border" target="_blank">Partners</a></li>
+            <li><a href="./contactUs.html" id="hex" class="active cir_border" target="_blank">Contact</a></li>
+            <li><a href="#Booking" id="nano" class="active cir_border" target="_blank">Book Now</a></li>
+            
+
+            <li><div>
+                <input type="checkbox" class="checkbox dark" id="checkbox">
+              <label for="checkbox" class="label">
+                <i class="fa fa-moon-o"></i>
+                <i class='fa fa-sun-o'></i>
+                <div class='ball'>
+              </label>
+            </div></li>
+        </ul>
+        <img src="./img/menu-btn.png" alt="" class="menu-btn">
+    </nav>
+
+
+
+
+
+<!-- Booking -->
+<section id="Booking">
+    <div class="titly">
+        <h1 class="font-color">Book Now</h1>
+        <div class="liner"></div>
+    </div>
+    <div class="book_here">
+        <form class="bform" action="booknow.php" method="post">
+            <div class="crow-message">
+                <h1 class="color">Reserve Your Room</h1>
+                <div></div>
+            </div>
+            <div class="crow-in">
+                <input type="text" id="fname" name="fname" placeholder="Enter Your First Name" required>
+                <input type="text" id="lname" name "lname" placeholder="Enter Your Last Name" required>
+            </div>
+            <div class="crow-in">
+                <input type="text" id="cnic" name="cnic" placeholder="Enter Your CNIC (xxxxx-xxxxxxx-x)" required>
+                <input type="email" id="email" name="email" placeholder="Your Email ID" required>
+            </div>
+            <div class="crow-in">
+                <input type="tel" id="nbr" name="nbr" placeholder="Enter Your Phone Number" required>
+                <textarea name="address" id="address" placeholder="Permanent Address" required></textarea>
+            </div>
+            <div class="crow-in">
+                
+                <input type="date" id="checkin" name="checkin" placeholder="Check-in Date" required>
+                <input type="date" id="checkout" name="checkout" placeholder="Check-out Date" required>
+            </div>
+            <div class="crow-in">
+                <input type="number" id="adults" name="adults" min="1" placeholder="Number of Adults" required>
+                <input type="number" id="children" name="children" min="0" placeholder="Number of Childrens" required>
+            </div>
+            <div class="crow-in">
+                <input type="number" id="rooms" name="rooms" min="1" placeholder="Number of Rooms" required>
+                <input type="number" id="beds" name="beds" min="1" placeholder="Number of Beds per Room" required>
+            </div>
+            
+            <div class="crow-in">
+                <input type="text" id="creditcard" name="creditcard" placeholder="Enter Credit Card Number" required>
+            </div>
+            <div class="crow-in">
+                <input type="text" id="expiry" name="expiry" placeholder="Card Expiry Date: MM/YY" required>
+                <input type="text" id="cvv" name="cvv" placeholder="CVV" required>
+                
+            </div>
+            <div class="crow-in">
+                <select name="roomType" id="roomType"  onchange="calculateTotalAmount()">
+                    <option value="rooms"> Select Room Type
+                    <option value="standard">Standard Room - $100/day</option>
+                    <option value="deluxe">Deluxe Room - $150/day</option>
+                    <option value="suite" selected>Suite - $250/day</option>
+                </option>
+                </select>
+            </div>
+            <div class="crow-in">
+                <label for="numberOfDays">Number of Days:</label>
+                <input type="number" id="numberOfDays" name="numberOfDays" min="1" value="1" onchange="calculateTotalAmount()">
+            </div>
+            <script>
+                function calculateTotalAmount() {
+                    // Get the selected room type and number of days
+                    const roomType = document.getElementById('roomType').value;
+                    const numberOfDays = parseInt(document.getElementById('numberOfDays').value);
+            
+                    // Define the fixed daily rates for each room type
+                    const $roomRates = {
+                        standard: 100,
+                        deluxe: 150,
+                        suite: 250
+                    };
+            
+                    // Calculate the total amount
+                    const totalAmount = roomRates[roomType] * numberOfDays;
+            
+                    // Display the total amount
+                    document.getElementById('totalAmount').textContent = `$${totalAmount}`;
+            
+                    // You can also update any other parts of your form or UI as needed.
+                }
+            </script>
+            <div class="crow-in">
+                <label for="totalAmount">Total Amount:</label>
+                <span id="totalAmount">$100</span>
+            </div>
+            <div class="crow">
+                <input class="crow-p" type="submit" value="Pay Now" id="pay-button" onclick="retrieveMoney()">
+            </div>
+            <script>
+                function retrieveMoney() {
+                    // Calculate the total amount based on the selected room type and number of days (if not already calculated)
+                    calculateTotalAmount();
+            
+                    // Get the calculated total amount
+                    const totalAmount = parseFloat(document.getElementById('totalAmount').textContent.replace('$', ''));
+            
+                    // Display a confirmation message to the user with the total amount to be paid
+                    alert(`You are about to pay $${totalAmount.toFixed(2)}.`);
+            
+                    // Here, you can proceed with actual payment processing, which typically involves using a payment gateway or external service. In a real-world scenario, you would integrate payment processing here.
+            
+                    // You can also store booking information in a database and perform other necessary tasks related to the booking.
+            
+                    // For this simplified example, we are only displaying an alert.
+                }
+            </script>
+                                                            
+            <div class="crow">
+                <div class="ccol-left">
+                    <textarea type="text" id="remarks" name="remarks" placeholder="Your Remarks....."
+                        style="height: 80px;"></textarea>
+                </div>
+            </div>
+            <input class="crow-s" type="submit" value="Book Now">
+            <input class="crow-r" type="reset" value="Reset">
+        </form>
+    </div>
+</section>
+<!-- Booking -->
+
+    <!-- up scroll -->
+    <i class="fa fa-chevron-up" onclick="topFunction()" id="upbtn"></i>
+    <!-- end -->
+    <!--footer-->
+    <section class="footer">
+        <span>Created By Shabbir Hussain | &#169 2023 All rights reserved.</span>
+        <div class="social">
+            <li>
+                <a href="https://pritam-sarbajna-portfolio.netlify.app/" target="_blank" rel="noreferrer"><i class="fa fa-globe"></i></a>
+                <a href="https://github.com/PritamSarbajna" target="_blank" rel="noreferrer"><i class="fa fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/pritam-sarbajna-74945821b/" target="_blank" rel="noreferrer"><i class="fa fa-linkedin-square"></i></a>
+            </li>
+        </div>
+    </section>
+    <!--footer-->
+
+    <script>
+        const menuBtn = document.querySelector('.menu-btn')
+        const navlinks = document.querySelector('.nav-links')
+
+        menuBtn.addEventListener('click',()=>{
+            navlinks.classList.toggle('mobile-menu')
+        })
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="js/script.js"></script>
+    <!-- Add Stripe.js library -->
+    <script src="https://js.stripe.com/v3/"></script>
+
+</body>
+</html>

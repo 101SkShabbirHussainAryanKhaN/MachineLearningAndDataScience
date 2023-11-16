@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gilgit-Baltistan Tourism</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+</head>
+<body onload='if (window.location.href.substr(window.location.href.length - 6) == "#about") { introAboutLogoTransition(); }'>
+    <!--navbar-->
+    <nav class="navbar glass" style="height: 70px;">
+        <span><a href="#home" style="display:flex; align-items: center;"><img class="img2" src="./sklogo.png" width="40"
+            style="margin: -25px -10px -25px -20px"><h1 class="logo">&nbsp;GB Tourism</h1></a></span>
+        <ul class="nav-links">
+            <li><a href="./index.html" id="pri" class="active cir_border" target="_blank">Home</a></li>
+            <li><a href="./events.html"  id="sec" class="active cir_border" target="_blank">Tours</a></li>
+            <li><a href="#explore" id="tri" class="active cir_border" >Explore</a></li>
+            <li><a href="./aboutUs.html" id="quad" class="active cir_border" target="_blank">About</a></li>
+            <li><a href="./partners.html" id="quint" class="active cir_border" target="_blank">Partners</a></li>
+            <li><a href="./contactUs.html" id="hex" class="active cir_border" target="_blank" >Contact</a></li>
+            <li><a href="./bookingnow.html" id="nano" class="active cir_border" target="_blank">Book Now</a></li>
+            <li><div>
+                <input type="checkbox" class="checkbox dark" id="checkbox">
+              <label for="checkbox" class="label">
+                <i class="fa fa-moon-o"></i>
+                <i class='fa fa-sun-o'></i>
+                <div class='ball'>
+              </label>
+            </div></li>
+        </ul>
+        <img src="./img/menu-btn.png" alt="" class="menu-btn">
+    </nav>
+    <!--navbar-->
+
+
+    <!--Explore-->
+    <section class="explore" id="explore">
+
+        
+
+        <div class="explore-content">
+            <h1>Adventure Activities</h1>
+            <div class="line"></div>
+            <p>Discover a wide range of adventure activities in Gilgit-Baltistan, from trekking and mountaineering to cultural exploration. </p>
+            <a href="#" class="ctn">Explore more</a>
+        </div>
+    </section>
+    <!--Explore-->
+    <!--tours-->
+    <section class="tours">
+        <div class="container row">
+            <div class="col content-col">
+
+                <div class="header-content">
+                    <h2  id="quote">UPCOMING TOURS & DESTINATION</h2>
+                    <div class="line"></div>
+                </div>
+                <p>Wed 28 sept 2023 :Shangrilla Resort. </br>
+                    Sat 1 oct 2023 : Naltal valley.</br>
+                    Tues 4 oct 2023 : Khamosh Waterfall. </br> 
+                     and many more ......
+                 </p>
+                <a href="#" class="ctn">Learn more</a>
+            </div>
+            <div class="image-col">
+                <div class="image-gallery" id="img-galary">
+                    <img src="./img/carousel-img2.jpg" alt="">
+                    <img src="./img/carousel-img2.jpg" alt="">
+                    <img src="./img/carousel-img3.jpg" alt="">
+                    <img src="./img/carousel-img3.jpg" alt="">
+                    
+                </div>
+            </div>
+        </div>
+        <br><br><br><br>
+    </section>
+    <!--tours-->
+
+
+      
+    <!-- up scroll -->
+    <i class="fa fa-chevron-up" onclick="topFunction()" id="upbtn"></i>
+    <!-- end -->
+    <!--footer-->
+    <section class="footer">
+        <span>Created By Shabbir Hussain | &#169 2023 All rights reserved.</span>
+        <div class="social">
+            <li>
+                <a href="https://pritam-sarbajna-portfolio.netlify.app/" target="_blank" rel="noreferrer"><i class="fa fa-globe"></i></a>
+                <a href="https://github.com/PritamSarbajna" target="_blank" rel="noreferrer"><i class="fa fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/pritam-sarbajna-74945821b/" target="_blank" rel="noreferrer"><i class="fa fa-linkedin-square"></i></a>
+            </li>
+        </div>
+    </section>
+    <!--footer-->
+
+    <script>
+        const menuBtn = document.querySelector('.menu-btn')
+        const navlinks = document.querySelector('.nav-links')
+
+        menuBtn.addEventListener('click',()=>{
+            navlinks.classList.toggle('mobile-menu')
+        })
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
